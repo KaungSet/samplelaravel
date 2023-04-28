@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RetailerController;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +23,14 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/index', function () {
         return view('index');
     });
+
+    //Retailer
+    Route::get('retailer',[RetailerController::class, 'index'])->name('retailer');
+    Route::get('retailer/create',[RetailerController::class, 'create'])->name('retailer-create');
+
+    //Shop
+    Route::get('shop',[ShopController::class, 'index'])->name('shop');
+    Route::get('shop/create',[ShopController::class, 'create'])->name('shop-create');
 });
 
 
