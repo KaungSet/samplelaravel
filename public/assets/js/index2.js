@@ -9,7 +9,7 @@ $(function() {
             barWidth: '2',
             resize: true,
             barSpacing: '2',
-            barColor: '#008cff'
+            barColor: '#9f2b5b'
         });
 		
 	// chart 2
@@ -312,7 +312,7 @@ jQuery('#dashboard-map').vectorMap(
 			value: 20
 		}],
 		resize: true,
-		colors:['#008cff', '#15ca20', '#fd3550']
+		colors:['#9f2b5b', '#15ca20', '#fd3550']
 	});
 	
 	

@@ -133,7 +133,7 @@ jQuery('#geographic-map-2').vectorMap(
     color: '#009efb',
     regionStyle : {
         initial : {
-          fill : '#008cff'
+          fill : '#9f2b5b'
         }
       },
     markerStyle: {
@@ -167,7 +167,7 @@ jQuery('#geographic-map-2').vectorMap(
  var ctx = document.getElementById('chart3').getContext('2d');
 
   var gradientStroke1 = ctx.createLinearGradient(0, 0, 0, 300);
-      gradientStroke1.addColorStop(0, '#008cff');
+      gradientStroke1.addColorStop(0, '#9f2b5b');
       gradientStroke1.addColorStop(1, 'rgba(22, 195, 233, 0.1)');
 
       var myChart = new Chart(ctx, {
