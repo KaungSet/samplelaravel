@@ -44,18 +44,16 @@
                                     <th>Name</th>
                                     <th>Phone</th>
                                     <th>Created By</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                             @if($retailers->count()>0)
                                 @foreach($retailers as $key => $value)
                                     <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>61</td>
-                                        <td>2011/04/25</td>
-                                        <td>$320,800</td>
+                                        <td>{{$value->name}}</td>
+                                        <td>{{$value->phone}}</td>
+                                        <td>{{$value->created_by}}</td>
                                     </tr>
                                 @endforeach
                             @endif 

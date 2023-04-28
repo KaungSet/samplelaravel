@@ -27,6 +27,7 @@ Route::group(['middleware' => ['auth']], function () {
     //Retailer
     Route::get('retailer',[RetailerController::class, 'index'])->name('retailer');
     Route::get('retailer/create',[RetailerController::class, 'create'])->name('retailer-create');
+    Route::post('retailer/store',[RetailerController::class, 'store'])->name('retailer-store');
 
     //Shop
     Route::get('shop',[ShopController::class, 'index'])->name('shop');

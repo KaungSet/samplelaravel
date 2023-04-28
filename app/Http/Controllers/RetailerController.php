@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Retailer;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreRetailer;
+use Auth;
 
 class RetailerController extends Controller
 {
@@ -34,9 +36,15 @@ class RetailerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreRetailer $request)
     {
-        //
+        $created_by = Auth::user()->id;
+        $retailer = Retailer::create([
+            "name" => $request['name'],
+            "phone" => $request['phone'],
+            "created_by" => $created_by,            
+        ]);
+        return redirect('retailer');
     }
 
     /**
