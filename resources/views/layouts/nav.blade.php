@@ -45,6 +45,24 @@
                 </li>
             </ul>
         </li>
+
+        <!-- Guess EPC ON/OFF -->
+        <li>
+            <a href="{{ url('guess') }}">
+                <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                </div>
+                <div class="menu-title">Guess EPC ON/OFF</div>
+            </a>
+        </li>
+
+        <!-- Laravel/Carbon Date & Time Library -->
+        <li>
+            <a href="{{ url('carbontest') }}">
+                <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                </div>
+                <div class="menu-title">Carbon Date & Time Library</div>
+            </a>
+        </li>
     </ul>
     <!--end navigation-->
 </div>
